@@ -1,3 +1,7 @@
 <Solution>
+  <Project Path="STARMN.Access/STARMN.Access.csproj" Id="6ff2a0c7-3359-437c-96e6-4d3a9a667251" />
+  <Project Path="STARMN.Core/STARMN.Core.csproj" Id="222edaa2-cb09-4468-be99-6b4d27627710" />
+  <Project Path="STARMN.Database/STARMN.Database.csproj" Id="31dde42d-e934-4b54-91d6-f771b302cf9c" />
+  <Project Path="STARMN.Service/STARMN.Service.csproj" Id="0347ff74-8ae0-4344-a3b9-5b1a9c53cfee" />
   <Project Path="STARMN.Web/STARMN.Web.csproj" />
 </Solution>
