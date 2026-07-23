@@ -1,0 +1,1795 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Shop Page Start -->
+<div class="container-fluid shop py-5">
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="product-categories mb-4">
+                    <h4>Products Categories</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="categories-item">
+                                <a href="#" class="text-dark"><i class="fas fa-apple-alt text-secondary me-2"></i> Office Monitors</a>
+                                <span>(25)</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="categories-item">
+                                <a href="#" class="text-dark"><i class="fas fa-apple-alt text-secondary me-2"></i>Game Monitors</a>
+                                <span>(25)</span>
+                            </div>
+                        </li>                       
+                    </ul>
+                </div>
+                <div class="price mb-4">
+                    <h4 class="mb-2">Price</h4>
+                    <input type="range" class="form-range w-100" id="range1I0nput" name="rangeInput" min="0" max="1500" value="0" oninput="amount.value=rangeInput.value">
+                    <output id="amount" name="amount" min-value="0" max-value="1500" for="rangeInput">0</output>
+                    <div class=""></div>
+                </div>
+                <div class="product-color mb-3">
+                    <h4>Select By Color</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="product-color-item">
+                                <a href="#" class="text-dark"><i class="fas fa-apple-alt text-secondary me-2"></i> Black Monitors</a>
+                                <span>(43)</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-color-item">
+                                <a href="#" class="text-dark"><i class="fas fa-apple-alt text-secondary me-2"></i> White Monitors</a>
+                                <span>(7)</span>
+                            </div>
+                        </li>                        
+                    </ul>
+                </div>
+                <div class="brand mb-4">
+                    <h4>Office Monitors Brand</h4>
+                    <div class="brand-item">
+                        <input type="radio" class="me-2" id="Categories-1" name="Categories-1" value="Beverages">
+                        <label for="Categories-1" class="text-dark"> ASUS</label>
+                    </div>
+                    <div class="brand-item">
+                        <input type="radio" class="me-2" id="Categories-2" name="Categories-1" value="Beverages">
+                        <label for="Categories-2" class="text-dark">DELL</label>
+                    </div>
+                    
+                    <div class="brand-item">
+                        <input type="radio" class="me-2" id="Categories-1" name="Categories-1" value="Beverages">
+                        <label for="Categories-1" class="text-dark">HP</label>
+                    </div>
+                    <div class="brand-item">
+                        <input type="radio" class="me-2" id="Categories-2" name="Categories-1" value="Beverages">
+                        <label for="Categories-2" class="text-dark">LENOVO</label>
+                    </div>
+
+                    
+                    <div class="brand-item">
+                        <input type="radio" class="me-2" id="Categories-1" name="Categories-1" value="Beverages">
+                        <label for="Categories-1" class="text-dark">LG</label>
+                    </div>
+                    <div class="brand-item">
+                        <input type="radio" class="me-2" id="Categories-2" name="Categories-1" value="Beverages">
+                        <label for="Categories-2" class="text-dark">SAMSUNG</label>
+                    </div>
+                </div>
+
+                <div class="brand mb-4">
+                    <h4>Game Monitors Brand</h4>
+                    <div class="brand-item">
+                        <input type="radio" class="me-2" id="Categories-1" name="Categories-1" value="Beverages">
+                        <label for="Categories-1" class="text-dark">AOC</label>
+                    </div>
+                    <div class="brand-item">
+                        <input type="radio" class="me-2" id="Categories-2" name="Categories-1" value="Beverages">
+                        <label for="Categories-2" class="text-dark">ASUS</label>
+                    </div>
+
+                    <div class="brand-item">
+                        <input type="radio" class="me-2" id="Categories-1" name="Categories-1" value="Beverages">
+                        <label for="Categories-1" class="text-dark">DELL</label>
+                    </div>
+                    <div class="brand-item">
+                        <input type="radio" class="me-2" id="Categories-2" name="Categories-1" value="Beverages">
+                        <label for="Categories-2" class="text-dark">GAMEBOOSTER</label>
+                    </div>
+
+                    
+                    <div class="brand-item">
+                        <input type="radio" class="me-2" id="Categories-1" name="Categories-1" value="Beverages">
+                        <label for="Categories-1" class="text-dark">LG</label>
+                    </div>
+                    <div class="brand-item">
+                        <input type="radio" class="me-2" id="Categories-2" name="Categories-1" value="Beverages">
+                        <label for="Categories-2" class="text-dark">MONSTER</label>
+                    </div>
+
+                    
+                    <div class="brand-item">
+                        <input type="radio" class="me-2" id="Categories-1" name="Categories-1" value="Beverages">
+                        <label for="Categories-1" class="text-dark">MSI</label>
+                    </div>
+                    <div class="brand-item">
+                        <input type="radio" class="me-2" id="Categories-2" name="Categories-1" value="Beverages">
+                        <label for="Categories-2" class="text-dark">SAMSUNG</label>
+                    </div>
+
+                </div>
+
+
+                <div class="featured-product mb-4">
+                    <h4 class="mb-3">Featured products</h4>
+                    <div class="featured-product-item">
+                        <div class="rounded me-4" style="width: 350px; height: 150px;">
+                            <img src="~/electro/img/aoc game monitor3.jpeg" class="img-fluid rounded" alt="Image">
+                        </div>
+                        <div>
+                            <h6 class="mb-2">AOC 49-Inch AG493UCX 120Hz 1ms FreeSync Pro DQHD USB-C VA Curved Gaming Monitor</h6>
+                            <div class="d-flex mb-2">
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <h5 class="fw-bold me-2">$ 539,99</h5>
+                                <h5 class="text-danger text-decoration-line-through">$ 899,99</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-product-item">
+                        <div class="rounded me-4" style="width: 350px; height: 150px;">
+                            <img src="~/electro/img/msi game monitor5.jpg" class="img-fluid rounded" alt="Image">
+                        </div>
+                        <div>
+                            <h6 class="mb-2">MSI MPG 491CQP QD-OLED 49 5120x1440 144Hz 0.03 ms HDMI DP Type-C HDR 400 Gaming Monitor</h6>
+                            <div class="d-flex mb-2">
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <h5 class="fw-bold me-2">$ 659,99</h5>
+                                <h5 class="text-danger text-decoration-line-through">$ 1099,99</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-product-item">
+                        <div class="rounded me-4" style="width: 300px; height: 150px;">
+                            <img src="~/electro/img/msi game monitor3.jpg" class="img-fluid rounded" alt="Image">
+                        </div>
+                        <div>
+                            <h6 class="mb-2">MSI OPTIX MPG27CQ2 WQHD 27-Inch 144Hz 1MS(MPRT) FreeSync LED Curved Gaming Monitor </h6>
+                            <div class="d-flex mb-2">
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <h5 class="fw-bold me-2">$ 239,99</h5>
+                                <h5 class="text-danger text-decoration-line-through">$ 399,99</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center my-4">
+                        <a href="~/Dashboard/ShopDetail" class="btn btn-primary px-4 py-3 rounded-pill w-100">View More</a>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="position-relative">
+                        <img src="~/electro/img/gamebooster game monitor2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        <div class="text-center position-absolute d-flex flex-column align-items-center justify-content-center rounded p-4" style="width: 100%; height: 100%; top: 0; right: 0; background: rgba(242, 139, 0, 0.3);">
+                            <h5 class="display-6 text-primary">SALE</h5>
+                            <h4 class="text-secondary">Get UP To 40% Off</h4>
+                            <a href="#" class="btn btn-primary rounded-pill px-4">Shop Now</a>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-tags py-4">
+                    <h4 class="mb-3">PRODUCT TAGS</h4>
+                    <div class="product-tags-items bg-light rounded p-3">
+                        <a href="#" class="border rounded py-1 px-2 mb-2">News</a>
+                        <a href="#" class="border rounded py-1 px-2 mb-2">Sales</a>
+                        <a href="#" class="border rounded py-1 px-2 mb-2">Black Monitors</a>
+                        <a href="#" class="border rounded py-1 px-2 mb-2">White Monitors</a>
+                        <a href="#" class="border rounded py-1 px-2 mb-2">Monitors</a>
+                        <a href="#" class="border rounded py-1 px-2 mb-2">Office Monitors</a>
+                        <a href="#" class="border rounded py-1 px-2 mb-2">Gaming Monitors</a>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="rounded mb-4 position-relative">
+                    <img src="~/electro/img/aoc game monitor3.jpeg" class="img-fluid rounded w-100" style="height: 450px;" alt="Image">
+                    <div class="position-absolute rounded d-flex flex-column align-items-center justify-content-center text-center" style="width: 100%; height: 450px; top: 0; left: 0; background: rgba(242, 139, 0, 0.3);">
+                        <h4 class="display-5 text-primary">SALE</h4>
+                        <h3 class="display-4 text-white mb-4">Get UP To 40% Off</h3>
+                        <a href="#" class="btn btn-primary rounded-pill">Shop Now</a>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-xl-7">
+                        <div class="input-group w-100 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="monitors,brand" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 text-end">
+                        <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between">
+                            <label for="electronics">Sort By:</label>
+                            <select id="electronics" name="electronicslist" class="border-0 form-select-sm bg-light me-3" form="electronicsform">
+                                <option value="volvo">Default Sorting</option>
+                                <option value="volv">Nothing</option>
+                                <option value="sab">Popularity</option>
+                                <option value="saab">Newness</option>
+                                <option value="opel">Average Rating</option>
+                                <option value="audio">Low to high</option>
+                                <option value="audi">High to low</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-2">
+                        <ul class="nav nav-pills d-inline-flex text-center py-2 px-2 rounded bg-light mb-4">
+                            <li class="nav-item me-4">
+                                <a class="bg-light" data-bs-toggle="pill" href="#tab-5">
+                                    <i class="fas fa-th fa-3x text-primary"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="bg-light" data-bs-toggle="pill" href="#tab-6">
+                                    <i class="fas fa-bars fa-3x text-primary"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="tab-5" class="tab-pane fade show p-0 active">
+                        <div class="row g-4 product">
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/aoc game monitor1.jpeg" class="img-fluid w-100 rounded-top" alt="">                                            
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">AOC 31,5-Inch 240Hz 1ms FreeSync 2 Full HD DP HDMI VA Curved Gaming Monitor <br> C32G2ZE</a>
+                                            <del class="me-2 fs-5">$ 259,99</del>
+                                            <span class="text-primary fs-5">$ 155,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>                                         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/aoc game monitor2.jpeg" class="img-fluid w-100 rounded-top" alt="">                                           
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">AOC AGON Pro 31.5-Inch 0.03 ms 4K Pivot 165 Hz OLED Gaming Monitor <br> AG326UD</a>
+                                            <del class="me-2 fs-5">$ 899,99</del>
+                                            <span class="text-primary fs-5">$ 539,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/aoc game monitor3.jpeg" class="img-fluid w-100 rounded-top" alt="">                                            
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">AOC 49-Inch 120Hz 1ms FreeSync Pro DQHD USB-C VA Curved Gaming Monitor <br> AG493UCX</a>
+                                            <del class="me-2 fs-5">$ 899,99</del>
+                                            <span class="text-primary fs-5">$ 539,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>                                         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/asus game monitor1.jpg" class="img-fluid w-100 rounded-top" alt="">                                            
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">ASUS TUF Gaming Monitor 27-Inch 170Hz 1ms HDR10 HDMI DP IPS G-Sync FreeSync WQHD <br> VG27AQ1A</a>
+                                            <del class="me-2 fs-5">$ 279,99</del>
+                                            <span class="text-primary fs-5">$ 167,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/asus work monitor1.jpg" class="img-fluid w-100 rounded-top" alt="">                                            
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">ASUS 27-Inch 120Hz 1ms Full HD IPS Office Monitor <br> VA279HG</a>
+                                            <del class="me-2 fs-5">$ 179,99</del>
+                                            <span class="text-primary fs-5">$ 143,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/asus work monitor2.jpg" style="padding-top:40px" class="img-fluid w-100 rounded-top" alt="">                                            
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="padding-top: 30px;">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">ASUS ProArt 27-Inch LED Office Monitor <br> PA278CV</a>
+                                            <del class="me-2 fs-5">$ 299,99</del>
+                                            <span class="text-primary fs-5">$ 239,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/asus work monitor3.jpg" style="padding-top:55px" class="img-fluid w-100 rounded-top" alt="">                                            
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">ASUS 27-Inch FHD Office Monitor, 1080P IPS Display, 120Hz Refresh Rate <br>VA279HG</a>
+                                            <del class="me-2 fs-5">$ 189,99</del>
+                                            <span class="text-primary fs-5">$ 151,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/asus work monitor4.jpg" class="img-fluid w-100 rounded-top" alt="">                                            
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">ASUS 34-Inch 100Hz 1ms WQHD Adaptive Sync VA Office Monitor <br>VU34WCIP-W</a>
+                                            <del class="me-2 fs-5">$ 429,99</del>
+                                            <span class="text-primary fs-5">$ 343,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>                                         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/asus work monitor5.jpg" class="img-fluid w-100 rounded-top" alt="">                                            
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">ASUS Eye Care Monitor 27-Inch Full HD,IPS <br> VC279H-W</a>
+                                            <del class="me-2 fs-5">$ 159,99</del>
+                                            <span class="text-primary fs-5">$ 127,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                           @* Shop Two Page Start *@
+
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/dell game monitor1.jpeg" style="padding-top:70px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Dell 23.8-Inch 240Hz 0.5ms Gaming Monitor  <br> SE2426HG</a>
+                                            <del class="me-2 fs-5">$ 229,99</del>
+                                            <span class="text-primary fs-5">$ 137,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/dell game monitor2.jpeg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="margin-top:-30px">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Dell 23.8-Inch 200Hz 1ms Full HD FreeSync Premium IPS Gaming Monitor <br> SE2425HG</a>
+                                            <del class="me-2 fs-5">$ 199,99</del>
+                                            <span class="text-primary fs-5">$ 119,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/dell game monitor3.jpeg" style="padding-top:15px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="margin-top:-15px">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Dell 27-Inch 240Hz 0.5ms Curved Gaming Monitor <br> S2722DGM</a>
+                                            <del class="me-2 fs-5">$ 299,99</del>
+                                            <span class="text-primary fs-5">$ 179,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/dell work monitor1.jpeg" style="padding-top:35px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">DELL Pro 34-Inch Plus (34.1-Inch, 3440 x 1440) Office Monitor <br> P3425WE</a>
+                                            <del class="me-2 fs-5">$ 829,99</del>
+                                            <span class="text-primary fs-5">$ 663,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/dell work monitor2.jpeg" style="padding-top:40px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Dell Pro 27-Inch Plus (2560x1440) WQHD 100Hz 5ms HDMI DP Type-C IPS Monitor <br> P2725D</a>
+                                            <del class="me-2 fs-5">$ 289,99</del>
+                                            <span class="text-primary fs-5">$ 231,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/dell work monitor3.jpeg" style="padding-top:55px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Dell 23.8-Inch FHD Touch Office Monitor (1920 x 1080) <br>P2418HT</a>
+                                            <del class="me-2 fs-5">$ 349,99</del>
+                                            <span class="text-primary fs-5">$ 279,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/dell work monitor4.jpeg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Dell 27-Inch FHD (1920 x 1080) 4MS USB-C IPS LED Office Monitor <br>S2723HC </a>
+                                            <del class="me-2 fs-5">$ 239,99</del>
+                                            <span class="text-primary fs-5">$ 191,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/dell work monitor5.jpeg" style="padding-top:10px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Dell 24-Inch Plus 144Hz 1ms (1920 x 1080) Full HD, IPS Office Monitor <br> S2425HSM</a>
+                                            <del class="me-2 fs-5">$ 169,99</del>
+                                            <span class="text-primary fs-5">$ 135,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            @* Shop Three Page Start *@
+
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/gamebooster game monitor1.jpg"  class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">GameBooster 23.8-Inch 165Hz 1ms HDMI DP FreeSync G-Sync FHD IPS Gaming Monitor  <br> GB-2417FF</a>
+                                            <del class="me-2 fs-5">$ 159,99</del>
+                                            <span class="text-primary fs-5">$ 95,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/gamebooster game monitor2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">GameBooster 27-Inch 165Hz 1ms HDMI DP FreeSync G-Sync Pivot FHD IPS Gaming Monitor <br> GB-2716FF</a>
+                                            <del class="me-2 fs-5">$ 199,99</del>
+                                            <span class="text-primary fs-5">$ 119,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/hp work monitor1.jpeg" style="padding-top:50px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="padding-top:65px">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">HP 27-Inch HD 1080p IPS Office Monitor<br> E27G5</a>
+                                            <del class="me-2 fs-5">$ 229,99</del>
+                                            <span class="text-primary fs-5">$ 183,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/hp work monitor2.jpeg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">HP 23.8-Inch FHD 1080p 100Hz IPS White Office Monitor <br> 94C21AA</a>
+                                            <del class="me-2 fs-5">$ 149,99</del>
+                                            <span class="text-primary fs-5">$ 119,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/hp work monitor3.jpeg" style="padding-top:40px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">HP E24t G5 23.8-Inch FHD Touch Office Monitor<br> 6N6E6AA</a>
+                                            <del class="me-2 fs-5">$ 329,99</del>
+                                            <span class="text-primary fs-5">$ 263,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/hp work monitor4.jpeg" style="padding-top:55px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">HP Series 7 Pro 31.5-Inch 4K Thunderbolt 4 Office Monitor<br>8Y2K9AA</a>
+                                            <del class="me-2 fs-5">$ 799,99</del>
+                                            <span class="text-primary fs-5">$ 639,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/hp work monitor5.jpeg" style="padding-top:50px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">HP S5 Pro 527PQ 27-Inch 5 ms 2K Pivot IPS 100 Hz Office Monitor<br>9D9S0UT </a>
+                                            <del class="me-2 fs-5">$ 279,99</del>
+                                            <span class="text-primary fs-5">$ 223,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/lenovo work monitor1.jpeg" style="padding-top:30px;padding-left:20px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="padding-top:110px">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Lenovo L24-4C 24-Inch FHD IPS 144 Hz Office Monitor<br>  67DDKAC6EU  </a>
+                                            <del class="me-2 fs-5">$ 139,99</del>
+                                            <span class="text-primary fs-5">$ 111,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            @* Shop Four Page Start *@
+
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/lenovo work monitor2.jpeg"class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Lenovo ThinkVision 27-Inch 1920 x 1080 Pixels Full HD Office Monitor  <br> C27-40</a>
+                                            <del class="me-2 fs-5">$ 199,99</del>
+                                            <span class="text-primary fs-5">$ 159,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/lenovo work monitor3.jpeg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="margin-top:70px">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Lenovo L27-4e 27-Inch FHD IPS 100Hz 4ms (1920 x 1080) Office Monitor <br> 68CDKAC1AU</a>
+                                            <del class="me-2 fs-5">$ 169,99</del>
+                                            <span class="text-primary fs-5">$ 135,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/lg game monitor1.jpeg" style="padding-top:90px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="margin-top:50px">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">LG 32-Inch Ultragear 144Hz 4K UHD (3840 x 2160) Gaming Monitor  <br> 32GQ750-B</a>
+                                            <del class="me-2 fs-5">$ 699,99</del>
+                                            <span class="text-primary fs-5">$ 419,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/lg game monitor2.jpeg" style="margin-top:-50px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="margin-top:-10px">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">LG UltraGear 27 Inch FHD 180Hz 1ms PIVOT NVIDIA G-SYNC IPS Gaming Monitor <br> 27GS65F-B</a>
+                                            <del class="me-2 fs-5">$ 249,99</del>
+                                            <span class="text-primary fs-5">$ 149,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/lg game monitor3.jpeg" style="padding-top:40px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">LG 26,5" ULTRAGEAR 0,02Ms(GTG) (540-720Hz) QHD OLED Gaming Monitor <br> 27GX790B-B</a>
+                                            <del class="me-2 fs-5">$ 1299,99</del>
+                                            <span class="text-primary fs-5">$ 779,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/lg game monitor4.jpeg" style="padding-top:55px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="padding-top:20px">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">LG UltraGear 27-Inch 0.03 ms 2K PIVOT 240 Hz OLED Gaming Monitor  <br>27GS95QE-B </a>
+                                            <del class="me-2 fs-5">$ 899,99</del>
+                                            <span class="text-primary fs-5">$ 539,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/lg game monitor5.jpeg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="margin-top:-25px">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">LG UltraGear 39-Inch 240Hz 0.03ms (3440 x 1440) OLED Curved Gaming Monitor <br>39GS95QE-B </a>
+                                            <del class="me-2 fs-5">$ 1399,99</del>
+                                            <span class="text-primary fs-5">$ 839,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/lg work monitor1.jpeg" style="padding-top:50px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="padding-top:20px">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">LG Smart 27-Inch Smart 4K UHD (3840 x 2160) IPS Office Monitor <br> 27U730SA-W</a>
+                                            <del class="me-2 fs-5">$ 329,99</del>
+                                            <span class="text-primary fs-5">$ 263,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            @* Shop Five Page Start *@
+
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/lg work monitor2.jpeg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="margin-top:-10px">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">LG 23,8-Inch 100Hz Full HD Curved Office Monitor  <br> 24U421A</a>
+                                            <del class="me-2 fs-5">$ 129,99</del>
+                                            <span class="text-primary fs-5">$ 103,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/monster game monitor1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="margin-top:-15px">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Monster Aryond 31.5-Inch 165Hz 1ms (HDMI+Display) G-Sync QHD LED Gaming Monitor<br> A32 V1.1
+                                            </a>
+                                            <del class="me-2 fs-5">$ 199,99</del>
+                                            <span class="text-primary fs-5">$ 119,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/msi game monitor1.jpg" style="margin-top:-20px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="padding-top:-20px" >Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">MSI OPTIX 27-Inch 165Hz 1Ms 1920X1080 (FHD) VA Freesync Curved Gaming Monitor<br> G271CQ4</a>
+                                            <del class="me-2 fs-5">$ 249,99</del>
+                                            <span class="text-primary fs-5">$ 149,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/msi game monitor2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">MSI OPTIX 27-Inch 165Hz 1ms WQHD Curved Freesync Gaming Monitor <br> G271CQR</a>
+                                            <del class="me-2 fs-5">$ 299,99</del>
+                                            <span class="text-primary fs-5">$ 179,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/msi game monitor3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">MSI OPTIX WQHD 27-Inch 144Hz 1ms (MPRT) FreeSync LED Curved Gaming Monitor<br> MPG27CQ2</a>
+                                            <del class="me-2 fs-5">$ 399,99</del>
+                                            <span class="text-primary fs-5">$ 239,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/msi game monitor4.jpg" style="margin-top:-120px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="padding-top:20px">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">MSI MPG QD-OLED 34-Inch 0.03 ms UWQHD Curved 240 Hz OLED Gaming Monitor<br>341CQPX</a>
+                                            <del class="me-2 fs-5">$ 999,99</del>
+                                            <span class="text-primary fs-5">$ 599,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/msi game monitor5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">MSI MPG QD-OLED 49-Inch (5120x1440) 144Hz 0.03 ms HDMI DP Type-C HDR 400 Gaming Monitor<br>MPG491CQP </a>
+                                            <del class="me-2 fs-5">$ 1099,99</del>
+                                            <span class="text-primary fs-5">$ 659,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/samsung game monitor1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Samsung Odyssey G5 G55C 27-Inch 165Hz 1ms QHD Gaming Monitor<br>  LS32CG552EUXUF  </a>
+                                            <del class="me-2 fs-5">$ 279,99</del>
+                                            <span class="text-primary fs-5">$ 167,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            @* Shop Six Page Start *@
+
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/samsung game monitor2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="margin-top:-5px">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Samsung Odyssey G9 G91F 49-Inch 144Hz 1ms DQHD Gaming Monitor <br> LS49FG916EUXUF</a>
+                                            <del class="me-2 fs-5">$ 1999,99</del>
+                                            <span class="text-primary fs-5">$ 1199,40</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/samsung game monitor3.jpg" style="padding-top:20px" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="padding-top:2px">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Samsung Odyssey G3 27-Inch 1ms 180Hz FHD (HDMI+DP) PIVOT Gaming Monitor<br>LS27DG302EUXUF</a>
+                                            <del class="me-2 fs-5">$ 199,99</del>
+                                            <span class="text-primary fs-5">$ 119,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/samsung game monitor4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Samsung Odyssey Neo G7 32-Inch 165Hz 1ms 4K IPS LED Curved Gaming Monitor<br> LS32BG750NUXEN</a>
+                                            <del class="me-2 fs-5">$ 799,99</del>
+                                            <span class="text-primary fs-5">$ 479,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/samsung game monitor5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="margin-top:-2px">Game Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">SAMSUNG ODYSSEY G8 32-Inch 1ms 330Hz 6K IPS Gaming Monitor <br> LS32HG802ESXUF</a>
+                                            <del class="me-2 fs-5">$ 1299,99</del>
+                                            <span class="text-primary fs-5">$ 779,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/samsung work monitor1.jpg" style="margin-top: -30px;"  class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="margin-top: 50px;">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Samsung ViewFinity S6 34-Inch WQHD (3440x1440) Curved Office Monitor<br> LS34C650TAUXXU</a>
+                                            <del class="me-2 fs-5">$ 499,99</del>
+                                            <span class="text-primary fs-5">$ 399,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/samsung work monitor2.jpg" style="padding-top: 0px;" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="margin-top:-27px"">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Samsung 31.5-Inch 75Hz Full HD (1920 x 1080) Curved LED Office Monitor<br>LC32R502FHNXZA</a>
+                                            <del class="me-2 fs-5">$ 249,99</del>
+                                            <span class="text-primary fs-5">$ 199,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/samsung work monitor3.jpg" style="padding-top: 80px;" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2" style="padding-top:35px">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">SAMSUNG S3 S30GD 24-Inch 100Hz FHD (1920 x 1080) IPS Office Monitor<br>LS24D300GAUXUF </a>
+                                            <del class="me-2 fs-5">$ 119,99</del>
+                                            <span class="text-primary fs-5">$ 95,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/samsung work monitor4.jpg" style="padding-top:50px;" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Samsung ViewFinity S7 S70D 32-Inch 4K UHD (3840x2160) IPS Black Office Monitor<br>  LS32D700EAEXXS  </a>
+                                            <del class="me-2 fs-5">$ 349,99</del>
+                                            <span class="text-primary fs-5">$ 279,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item">
+                                            <img src="~/electro/img/samsung work monitor5.jpg" style="padding-top:50px;" class="img-fluid w-100 rounded-top" alt="">
+                                            <div class="product-details">
+                                                <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">Office Monitor</a>
+                                            <a href="~/Dashboard/ShopDetail" class="d-block h4">Samsung S30B 32-Inch 75Hz 4K Ultra HD LED Black Office Monitor <br>  S32B304NWN  </a>
+                                            <del class="me-2 fs-5">$ 269,99</del>
+                                            <span class="text-primary fs-5">$ 215,99</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-add border border-top-0 rounded-bottom  text-center p-4 pt-0">
+                                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star text-primary"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Shop Page End -->

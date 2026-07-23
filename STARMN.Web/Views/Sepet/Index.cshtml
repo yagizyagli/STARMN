@@ -1,0 +1,154 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .cart {
+        width: 1000px;
+        margin: 60px auto;
+    }
+
+    .cart-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .cart-item img {
+      width: 150px;
+    }
+
+    .product-info {
+        flex: 1;
+    }
+
+    .quantity input {
+        width: 60px;
+    }
+
+    .summary {
+        width: 300px;
+        margin-left: auto;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .summary p {
+     display: flex;
+     justify-content: space-between;
+     margin: 15px 0;
+    }
+
+    .checkout,
+    .remove {
+        text-decoration: none;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 5px;
+    }
+
+    .checkout {
+        display: block;
+        text-align: center;
+        background: darkorange;
+    }
+
+    .remove {
+        background: darkred;
+    }
+
+</style>
+
+
+
+<section class="cart">
+
+    <h1>Shopping Cart</h1>
+    <p>Review your selected products before checkout.</p>
+
+    <div class="cart-item">
+
+        <img src="~/electro/img/samsung game monitor4.jpg" alt="Monitor">
+
+        <div class="product-info">
+            <h3>Samsung Odyssey Neo G7 </h3>
+            <p>32-Inch 4K IPS LED 165Hz Curved Gaming Monitor</p>
+            <h4>$479,99</h4>
+        </div>
+
+        <div class="quantity">
+            <label>Qty</label>
+            <input type="number" value="1" min="1">
+        </div>
+
+        <div class="price">
+            <h3>$479,99</h3>
+        </div>
+
+        <a href="#" class="remove">Remove</a>
+
+    </div>
+
+    <div class="cart-item">
+
+        <img src="~/electro/img/asus work monitor2.jpg" alt="Monitor">
+
+        <div class="product-info">
+            <h3>ASUS ProArt </h3>
+            <p>27-Inch IPS LED Office Monitor</p>
+            <h4>$239,99</h4>
+        </div>
+
+        <div class="quantity">
+            <label>Qty</label>
+            <input type="number" value="1" min="1">
+        </div>
+
+        <div class="price">
+            <h3>$239,99</h3>
+        </div>
+
+        <a href="#" class="remove">Remove</a>
+
+    </div>    
+    <div class="cart-item">
+
+        <img src="~/electro/img/lg work monitor1.jpeg" alt="Monitor">
+
+        <div class="product-info">
+            <h3>LG Smart</h3>
+            <p>27-Inch 4K UHD (3840 x 2160) IPS Office Monitor</p>
+            <h4>$263,99</h4>
+        </div>
+
+        <div class="quantity">
+            <label>Qty</label>
+            <input type="number" value="1" min="1">
+        </div>
+
+        <div class="price">
+            <h3>$263,99</h3>
+        </div>
+
+        <a href="#" class="remove">Remove</a>
+
+    </div>
+
+    <div class="summary">
+
+        <h2>Order Summary</h2>
+
+        <p>Subtotal <span>$ 983,97</span></p>
+        <p>Shipping <span>Free</span></p>
+        <p><strong>Total <span>$ 983,97</span></strong></p>
+
+        <a href="~/Dashboard/Checkout" class="checkout">Proceed to Checkout</a>
+
+    </div>
+
+</section>

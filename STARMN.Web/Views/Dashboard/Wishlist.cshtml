@@ -1,0 +1,103 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .wishlist {
+        width: 1000px;
+        margin: 60px auto;
+    }
+
+    .product {
+        display: flex;
+        align-items: center;
+        gap: 30px; /*  // metin ve resim arasında boşluk bırakmak için  */
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .product img {
+            width: 160px;
+     }
+
+    .content {
+        flex: 1;
+    }
+
+    .buttons a {
+        display: block;
+        text-decoration: none;
+        padding: 10px 18px;
+        margin: 5px 0;
+        text-align: center;
+        border-radius: 5px;
+        color: #fff;
+    }
+
+    .cart {
+        background: darkorange;
+    }
+
+    .remove {
+        background: #dc3545;
+    }
+
+</style>
+
+
+<section class="wishlist">
+
+    <h1>My Wishlist</h1>
+    <p>Save your favorite monitors and purchase them later.</p>
+
+    <div class="wishlist-container">
+
+        <div class="product">
+            <img src="~/electro/img/samsung game monitor4.jpg" alt="Monitor">
+
+            <div class="content">
+                <h3>Samsung Odyssey Neo G7</h3>
+                <p>32-Inch 4K IPS LED 165Hz Curved Gaming Monitor</p>
+                <h4>$479,99</h4>
+            </div>
+
+            <div class="buttons">
+                <a href="#" class="cart">Add to Cart</a>
+                <a href="#" class="remove">Remove</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="~/electro/img/asus work monitor2.jpg" alt="Monitor">
+
+            <div class="content">
+                <h3>ASUS ProArt</h3>
+                <p>27-Inch IPS LED Office Monitor</p>
+                <h4>$239,99</h4>
+            </div>
+
+            <div class="buttons">
+                <a href="#" class="cart">Add to Cart</a>
+                <a href="#" class="remove">Remove</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="~/electro/img/lg work monitor1.jpeg" alt="Monitor">
+
+            <div class="content">
+                <h3>LG Smart</h3>
+                <p>327-Inch 4K UHD (3840 x 2160) IPS Office Monitor</p>
+                <h4>$263,99</h4>
+            </div>
+
+            <div class="buttons">
+                <a href="#" class="cart">Add to Cart</a>
+                <a href="#" class="remove">Remove</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>

@@ -1,0 +1,120 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+
+<style>
+
+    .detail {
+        display: flex;
+        gap: 50px;  /*  // metin ve resim arasında boşluk bırakmak için */
+        width: 1000px;
+        margin: 60px auto;
+    }
+
+    .product-image img {
+        width: 450px;
+        height:500px;
+    }
+
+    .product-info {
+        flex: 1;
+    }
+
+    .stock {
+        color: green;
+        margin: 15px 0;
+    }
+
+    .product-info ul {
+        margin: 20px 0;
+    }
+
+    .quantity {
+        margin: 20px 0;
+    }
+
+    .quantity input {
+            width: 70px;
+            padding: 5px;
+    }
+
+    .buttons a {
+        display: inline-block;
+        padding: 12px 20px;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    .cart {
+        background: darkorange;
+    }
+
+    .wishlist {
+        background: darkorange;
+    }
+
+    .description {
+        width: 1000px;
+        margin: 40px auto;
+    }
+
+</style>
+
+
+
+<section class="detail">
+
+    <div class="product-image">
+        <img src="~/electro/img/lg game monitor3.jpeg" alt="Monitor">
+    </div>
+
+    <div class="product-info">
+
+        <h1>LG 26,5-Inch ULTRAGEAR 27GX790B-B 0,02Ms(GTG) 540-720Hz QHD OLED Gaming Monitor</h1>
+
+        <h2>$ 779,99</h2>
+
+        <p class="stock">✔ In Stock</p>
+
+        <p>
+            Experience stunning visuals with the LG UltraGear 27GX790B-B 26,5-Inch QHD OLED Monitor.
+            Designed for gaming, professional work, and everyday entertainment,
+            it delivers vibrant colors, fast response time, and exceptional clarity.
+        </p>
+
+        <ul>
+            <li>26,5-Inch QHD OLED Display</li>
+            <li>720Hz Refresh Rate</li>
+            <li>0,02ms Response Time</li>
+            <li>HDR Support</li>
+            <li>HDMI & DisplayPort</li>
+        </ul>
+
+        <div class="quantity">
+            <label>Quantity:</label>
+            <input type="number" value="1" min="1">
+        </div>
+
+        <div class="buttons">
+            <a href="#" class="cart">Add to Cart</a>
+            <a href="~/Dashboard/Wishlist" class="wishlist">Add to Wishlist</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="description">
+
+    <h2>Product Description</h2>
+
+    <p>
+        Built with advanced display technology, the LG UltraGear 27GX790B-B 26,5-Inch QHD OLED Monitor offers
+        smooth performance, sharp visuals, and wide viewing angles. Whether
+        you're gaming, editing videos, or working from home, this monitor
+        delivers an immersive viewing experience.
+    </p>
+
+</section>

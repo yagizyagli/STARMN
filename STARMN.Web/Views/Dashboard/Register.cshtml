@@ -1,0 +1,69 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+        .register {
+        width: 400px;
+        margin: 60px auto;
+        padding: 30px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column; /* // Form elemanlarını  hizalar */
+        }
+
+
+        .register button {
+            padding: 12px;
+            background: darkorange;
+            color: #fff;
+        }
+
+        .register input {
+            padding: 10px;
+            margin: 10px 0 20px;
+        }
+
+        .register form {
+            display: flex;
+            flex-direction: column; /* // Form elemanlarını  hizalar */
+        }
+
+        .register a {
+            color: darkorange;
+        }
+
+</style>
+
+
+
+<section class="register">
+
+    <h1>Create Account</h1>
+    <p>Join STARMN today.</p>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Your email">
+
+        <label>Password</label>
+        <input type="password" placeholder="Create password">
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm password">
+
+        <button>Sign Up</button>
+
+        <p>
+            Already have an account?
+            <a href="~/Dashboard/Login">Login</a>
+        </p>
+
+    </form>
+
+</section>

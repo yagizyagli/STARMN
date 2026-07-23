@@ -1,0 +1,60 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .login {
+        width: 400px;
+        margin: 60px auto;
+        padding: 30px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column; /* // Form elemanlarını  hizalar */
+    }
+
+
+    .login button {
+        padding: 12px;
+        background: darkorange;
+        color: #fff;
+    }
+
+    .login input {
+        padding: 10px;
+        margin: 10px 0 20px;
+    }
+
+    .login form {
+        display: flex;
+        flex-direction: column; /* // Form elemanlarını  hizalar */
+    }
+
+    .login a {
+        color: darkorange;
+    }
+</style>
+
+<section class="login">
+
+    <h1>Login</h1>
+    <p>Welcome back! Please login to your account.</p>
+
+    <form>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password">
+
+        <button>Login</button>
+
+        <p>
+            Don't have an account?
+            <a href="~/Dashboard/Register">Sign Up</a>
+        </p>
+
+    </form>
+
+</section>

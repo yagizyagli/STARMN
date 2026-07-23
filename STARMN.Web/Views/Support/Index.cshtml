@@ -1,0 +1,77 @@
+﻿@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .support {
+        width: 1000px;
+        margin: 60px auto;
+    }
+
+    .cards {
+        display: flex;
+        gap: 20px;  /*  // boşluk bırakmak için */
+        margin: 30px 0;
+    }
+
+    .card {
+        flex: 1;
+        border: 1px solid white;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .help-center {
+        margin-top: 40px;
+    }
+
+    .help-center h4 {
+        margin-top: 20px;
+    }
+
+</style>
+
+<section class="support">
+
+    <h1>Help & Support</h1>
+
+    <p>
+        Need assistance? Our support team is here to help you with your
+        questions about products, orders, and your account.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📧 Email Support</h3>
+            <p>support@starmn.com</p>
+        </div>
+
+        <div class="card">
+            <h3>📞 Phone Support</h3>
+            <p>+1 (555) 123-4567</p>
+        </div>
+
+        <div class="card">
+            <h3>🕒 Working Hours</h3>
+            <p>Monday - Friday<br>09:00 AM - 06:00 PM</p>
+        </div>
+
+    </div>
+
+    <h2>Help Center</h2>
+
+    <div class="help-center">
+
+        <h4>How can I track my order?</h4>
+        <p>You can track your order from your account after purchase.</p>
+
+        <h4>Do your monitors include a warranty?</h4>
+        <p>Yes. All monitors include an official manufacturer warranty.</p>
+
+        <h4>Can I return a product?</h4>
+        <p>Yes. Products can be returned within the return policy period.</p>
+
+    </div>
+
+</section>

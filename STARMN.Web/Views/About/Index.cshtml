@@ -1,0 +1,105 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .about {
+        display: flex;
+        align-items: center; /* // Metin ve resim ortalanır   */
+        gap:40px; /* // Metin ile resim arasındaki boşluk */
+        padding: 60px;
+    }
+
+    .about-img img {
+        width: 450px;
+        border-radius: 10px;
+    }
+
+    .about-text h4 {
+        color: darkorange;
+    }
+
+    .about-text p {
+        color: gray;
+        line-height: 1.7; /* // Metin satır yüksekliği */
+        margin: 15px 0;
+    }
+
+    .info {
+        display: flex;
+        gap: 20px; /* // Metin ile resim arasındaki boşluk */
+        margin: 25px 0; /* // Metin ile resim arasındaki boşluk */
+    }
+
+     .info div {
+      flex: 1; /* // bilgi kutusunun genişliği */
+     }
+
+    .btn {
+        display: inline-block;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        padding-right: 24px;
+        background: darkorange;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+</style>
+
+<section class="about">
+
+    <div class="about-img">
+        <img src="~/electro/img/header img.png" alt="Starmn Monitor">
+    </div>
+
+    <div class="about-text">
+
+        <span>ABOUT US</span>
+
+        <h1>Experience the Future of Display Technology</h1>
+
+        <p>
+            STARMN is dedicated to providing premium monitors that combine
+            cutting-edge technology, elegant design, and reliable performance.
+            Whether you're a gamer, designer, student, or professional, our
+            displays are built to deliver outstanding visual experiences.
+        </p>
+
+        <p>
+            We focus on quality, innovation, and customer satisfaction, offering
+            products that meet the needs of modern users while maintaining
+            affordable prices and exceptional value.
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>Premium Quality</h3>
+                <p>Built with advanced display technology.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Fast Delivery</h3>
+                <p>Quick and secure shipping worldwide.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Professional Customer Support</h3>
+                <p>Friendly customer service whenever you need it.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Warranty</h3>
+                <p>Reliable products backed by warranty.</p>
+            </div>
+
+        </div>
+
+
+        <a href="~/Shop/Index" class="btn">Explore Products</a>
+
+    </div>
+
+</section>
