@@ -3,9 +3,9 @@
 public class Role
 {
 
-    public int RolId { get; set; }
+    public int RoleId { get; set; }
 
-    public string Roladi { get; set; }
+    public string RolAdi { get; set; }
 
     public string Aciklama { get; set; }
     public string Sirket { get; set; }

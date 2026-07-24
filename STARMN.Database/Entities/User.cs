@@ -13,7 +13,7 @@ public class User
 
     public string Sifre { get; set; }
         
-    public int RolId { get; set; }
+    public int RoleId { get; set; }
 
     public Role Role { get; set; }
 
