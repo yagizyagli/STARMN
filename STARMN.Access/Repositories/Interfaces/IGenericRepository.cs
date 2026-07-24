@@ -1,0 +1,13 @@
+﻿
+
+namespace STARMN.Access.Repositories.Interfaces;
+
+public interface IGenericRepository<TEntity> where TEntity : class
+{
+    public void Save(TEntity entity);
+    public void Update(TEntity entity);
+    public void Delete(int id);
+    public List<TEntity> GetAll();
+    public TEntity GetById(int id);
+    public List<TEntity> GetByName(string name);
+}
