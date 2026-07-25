@@ -57,6 +57,14 @@ public class Program
 
         app.MapStaticAssets();
 
+
+        app.MapAreaControllerRoute(
+              name: "areas",
+              areaName: "AdminPanel",
+              pattern: "AdminPanel/{controller=Home}/{action=Index}/{id?}")
+              .WithStaticAssets();
+
+
         app.MapControllerRoute(
             name: "default",
             pattern: "{controller=Anasayfa}/{action=Index}/{id?}")
