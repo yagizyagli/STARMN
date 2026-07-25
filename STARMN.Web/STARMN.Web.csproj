@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\STARMN.Database\STARMN.Database.csproj" />
+    <ProjectReference Include="..\STARMN.Service\STARMN.Service.csproj" />
   </ItemGroup>
 
 </Project>
