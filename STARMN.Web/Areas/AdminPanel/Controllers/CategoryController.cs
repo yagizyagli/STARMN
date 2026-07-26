@@ -16,8 +16,10 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
 
         public IActionResult List()
         {
-            var list = _categoryService.GetAll();
-            return View(list);
+            var categoryList = _categoryService.GetAll();
+            return View(categoryList);
+
+
         }
 
         public IActionResult Create()
@@ -26,11 +28,10 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
         }
 
         [HttpPost]
-
         public IActionResult Create(Category category)
         {
-            bool result = _categoryService.Save(category);
-            if (result) 
+            bool categorySave = _categoryService.Save(category);
+            if (categorySave) 
             {
                 return RedirectToAction("List");             
             }
@@ -44,11 +45,10 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
         }
 
         [HttpPost]
-
         public IActionResult Update(Category category)
         {
-            bool update = _categoryService.Update(category);
-            if (update) 
+            bool categoryUpdate = _categoryService.Update(category);
+            if (categoryUpdate) 
             {
                 return RedirectToAction("List");
             }
@@ -56,10 +56,10 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
             return View();
         }
 
-        public IActionResult Delete(int id)
-        {
-            _categoryService.Delete(id);
-            return RedirectToAction("List");
-        }
+        public IActionResult Delete(int id) 
+        { 
+            var categoryGetirId = _categoryService.GetById(id);
+            return View(categoryGetirId);
+        }        
     }
 }

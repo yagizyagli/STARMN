@@ -56,8 +56,8 @@
                                         <td>@item.CategoryId</td>
                                         <td>@item.Aciklama</td>
                                         <td>
-                                            <input type="submit" class="btn btn-sn btn-warning" name="name" value="Güncelle" />
-                                            <input type="submit" class="btn btn-sn btn-danger" name="name" value="Sil" />
+                                            @Html.ActionLink("Güncelle", "Update", "Product", new { id = item.Id }, new { @class = "btn btn-sn btn-warning" })
+                                            @Html.ActionLink("Sil", "Delete", "Product", new { id = item.Id }, new { @class = "btn btn-sn btn-danger" })
                                         </td>
                                     </tr>
 

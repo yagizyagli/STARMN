@@ -55,8 +55,8 @@
                                         <td>@item.MusteriAdi</td>
                                         <td>@item.ToplamTutar</td>
                                         <td>
-                                            <input type="submit" class="btn btn-sn btn-warning" name="name" value="Güncelle" />
-                                            <input type="submit" class="btn btn-sn btn-danger" name="name" value="Sil" />
+                                            @Html.ActionLink("Güncelle", "Update", "Order", new { id = item.Id }, new { @class = "btn btn-sn btn-warning" })
+                                            @Html.ActionLink("Sil", "Delete", "Order", new { id = item.Id }, new { @class = "btn btn-sn btn-danger" })
                                         </td>
                                     </tr>
 
