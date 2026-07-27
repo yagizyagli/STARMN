@@ -37,11 +37,11 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
             }
             ViewBag.ErrorMessage = "Kategori eklenirken bir hata oluştu.";
             return View();
-        }        
-
-        public IActionResult Update()
+        }
+        public IActionResult Update(int id)
         {
-            return View();
+            var categoryUpdateId = _categoryService.GetById(id);
+            return View(categoryUpdateId);
         }
 
         [HttpPost]
@@ -57,9 +57,24 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
         }
 
         public IActionResult Delete(int id) 
-        { 
-            var categoryGetirId = _categoryService.GetById(id);
-            return View(categoryGetirId);
-        }        
+        {            
+            var categoryDeleteId = _categoryService.GetById(id);
+            return View(categoryDeleteId);
+        }
+        [HttpPost]
+        public IActionResult Delete(Category category)
+        {
+            bool categoryDelete = _categoryService.Delete(category.Id);
+            if (categoryDelete)
+            {
+                return RedirectToAction("List");
+            }
+            ViewBag.ErrorMessage = "Kategori silinirken bir hata oluştu.";
+            return View();
+        }
+
+        
+
+        
     }
 }
