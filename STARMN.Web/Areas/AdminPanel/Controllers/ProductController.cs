@@ -22,7 +22,7 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
 
         public IActionResult Create()
         {
-            ViewBag.Kategoriler = _categoryService.GetAll();
+            ViewBag.Category=_productService.GetAll();
             return View();
         }
         [HttpPost]
@@ -32,22 +32,41 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
             return RedirectToAction("List");
         }
 
-        public IActionResult Update()
+        public IActionResult Update(int id)
         {
-            return View();
+            var productUpdateId = _productService.GetById(id);
+            return View(productUpdateId);
         }
         [HttpPost]
         public IActionResult Update(Product product)
         {
-            _productService.Update(product);
-            return RedirectToAction("List");
+            var productUpdate=_productService.Update(product);
+            if(productUpdate==null) 
+            {
+                return RedirectToAction("List");
+            }
+            ViewBag.ErrorMessage = "Ürün güncellenirken bir hata oluştu.";
+            return View();
+
         }
 
         public IActionResult Delete(int id)
         {
-            _productService.Delete(id);
-            return RedirectToAction("List");
+            var productDeleteId= _productService.GetById(id);
+            return View(productDeleteId);
         }
+        [HttpPost]
+        public IActionResult Delete(Product product)
+        {
+            bool productDelete=_productService.Delete(product.Id);
+            if (productDelete)
+            {
+                return RedirectToAction("List");
+            }
+            ViewBag.ErrorMessage = "Ürün silinirken bir hata oluştu.";
+            return View();
+        }
+
 
 
     }

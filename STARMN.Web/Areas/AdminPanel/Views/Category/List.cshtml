@@ -54,7 +54,7 @@
                                         <td>@item.Adi</td>
                                         <td>@item.Aciklama</td>
                                         <td>
-                                            @Html.ActionLink("Güncelle", "Update", "Category", new { id = item.Id }, new { @class = "btn btn-sn btn-warning" })
+                                            <a href="/AdminPanel/Category/Update/@item.Id">Güncelle</a>
                                             @Html.ActionLink("Sil", "Delete", "Category", new { id = item.Id }, new { @class = "btn btn-sn btn-danger" })
                                         </td>
                                     </tr>

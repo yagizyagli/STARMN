@@ -18,15 +18,12 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
         {
             var categoryList = _categoryService.GetAll();
             return View(categoryList);
-
-
         }
 
         public IActionResult Create()
         {
             return View();
         }
-
         [HttpPost]
         public IActionResult Create(Category category)
         {
@@ -37,16 +34,17 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
             }
             ViewBag.ErrorMessage = "Kategori eklenirken bir hata oluştu.";
             return View();
-        }
-        public IActionResult Update(int id)
+        } 
+      
+        public IActionResult Update()
         {
-            var categoryUpdateId = _categoryService.GetById(id);
-            return View(categoryUpdateId);
+            return View();
         }
-
+        
         [HttpPost]
         public IActionResult Update(Category category)
         {
+
             bool categoryUpdate = _categoryService.Update(category);
             if (categoryUpdate) 
             {
@@ -56,10 +54,9 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
             return View();
         }
 
-        public IActionResult Delete(int id) 
-        {            
-            var categoryDeleteId = _categoryService.GetById(id);
-            return View(categoryDeleteId);
+        public IActionResult Delete() 
+        {
+            return View();
         }
         [HttpPost]
         public IActionResult Delete(Category category)
