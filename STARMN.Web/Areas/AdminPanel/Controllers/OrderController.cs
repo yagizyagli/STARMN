@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using STARMN.Database.Entities;
-using STARMN.Service.Services;
 using STARMN.Service.Services.Interfaces;
 
 namespace STARMN.Web.Areas.AdminPanel.Controllers
@@ -15,8 +14,8 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
         }
         public IActionResult List()
         {
-            var orderlist = _orderService.GetAll();
-            return View(orderlist);
+            var orderList = _orderService.GetAll();
+            return View(orderList);
         }
 
         public IActionResult Create()
@@ -27,37 +26,51 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
         [HttpPost]
         public IActionResult Create(Order order)
         {
-            var orderSave=_orderService.Save(order);         
-            return RedirectToAction("List");
-          
-        }
-
-
-        public IActionResult Update()
-        {
+            var orderSave=_orderService.Save(order);
+            if (orderSave!=null)
+            {
+                return RedirectToAction("List");
+            }
+            ViewBag.ErrorMessage = "Sipariş eklenirken bir hata oluştu";
             return View();
+          
+        }      
+        public IActionResult Update(int id)
+        {
+            var orderUpdateId = _orderService.GetById(id);
+            return View(orderUpdateId);
         }
 
         [HttpPost]
-
         public IActionResult Update(Order order)
         {
-             _orderService.Update(order);           
-             return RedirectToAction("List");
-            
-            
+            var orderUpdate= _orderService.Update(order);
+            if (orderUpdate != null)
+            {
+                return RedirectToAction("List");
+            }
+            ViewBag.ErrorMessage = "Sipariş güncellenirken bir hata oluştu";
+            return View();
+
+
         }
 
-        public IActionResult Delete()
+        public IActionResult Delete(int id)
         {
-            return View();
+            var orderDeleteId= _orderService.GetById(id);
+            return View(orderDeleteId);
 
         }
         [HttpPost]
-        public IActionResult Delete(int id)
+        public IActionResult Delete(Order order)
         {
-            _orderService.Delete(id);
-            return RedirectToAction("List");
+            var orderDelete=_orderService.Delete(order.Id);
+            if (orderDelete)
+            {
+                return RedirectToAction("List");
+            }
+            ViewBag.ErrorMessage = "Sipariş silinirken bir hata oluştu";
+            return View();
         }
 
     }

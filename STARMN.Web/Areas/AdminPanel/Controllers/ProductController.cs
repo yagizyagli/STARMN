@@ -22,28 +22,36 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
 
         public IActionResult Create()
         {
-            ViewBag.Category=_productService.GetAll();
+            ViewBag.Kategoriler=_categoryService.GetAll();
             return View();
         }
         [HttpPost]
         public IActionResult Create(Product product)
         {
-            _productService.Save(product);
-            return RedirectToAction("List");
-        }
+            var productSave=_productService.Save(product);
+            if (productSave != null) 
+            {
+                return RedirectToAction("List");
+            }
+            ViewBag.ErrorMessage = "Ürün eklenirken bir hata oluştu.";
+            return View();
+            
+        }       
 
         public IActionResult Update(int id)
         {
+            ViewBag.Kategoriler=_categoryService.GetAll();
             var productUpdateId = _productService.GetById(id);
             return View(productUpdateId);
         }
         [HttpPost]
         public IActionResult Update(Product product)
         {
-            var productUpdate=_productService.Update(product);
-            if(productUpdate==null) 
+            var productUpdate= _productService.Update(product);
+            if (productUpdate != null) 
             {
                 return RedirectToAction("List");
+            
             }
             ViewBag.ErrorMessage = "Ürün güncellenirken bir hata oluştu.";
             return View();
@@ -52,13 +60,14 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
 
         public IActionResult Delete(int id)
         {
+            ViewBag.Kategoriler=_categoryService.GetAll();
             var productDeleteId= _productService.GetById(id);
             return View(productDeleteId);
         }
         [HttpPost]
         public IActionResult Delete(Product product)
         {
-            bool productDelete=_productService.Delete(product.Id);
+            var productDelete=_productService.Delete(product.Id);
             if (productDelete)
             {
                 return RedirectToAction("List");

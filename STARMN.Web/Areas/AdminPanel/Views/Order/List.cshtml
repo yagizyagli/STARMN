@@ -25,7 +25,7 @@
             <div class="card card-primary">
                 <div class="card-header">
                     <div class="col-md-10">
-                        <h4>Sipariş List</h4>
+                        <h4>Order List</h4>
                     </div>
 
                     <div class="col-md-2 float-right">
@@ -51,8 +51,8 @@
                                 {
                                     <tr>
                                         <td>@item.Id</td>
-                                        <td>@item.Tarih</td>
                                         <td>@item.MusteriAdi</td>
+                                        <td>@item.Tarih</td>
                                         <td>@item.ToplamTutar</td>
                                         <td>
                                             @Html.ActionLink("Güncelle", "Update", "Order", new { id = item.Id }, new { @class = "btn btn-sn btn-warning" })

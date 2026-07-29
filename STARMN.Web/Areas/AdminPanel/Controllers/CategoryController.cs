@@ -36,9 +36,10 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
             return View();
         } 
       
-        public IActionResult Update()
+        public IActionResult Update(int id)
         {
-            return View();
+            var categoryUpdateId=_categoryService.GetById(id);
+            return View(categoryUpdateId);
         }
         
         [HttpPost]
@@ -54,9 +55,10 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
             return View();
         }
 
-        public IActionResult Delete() 
+        public IActionResult Delete(int id) 
         {
-            return View();
+            var categoryDeleteId=_categoryService.GetById(id);
+            return View(categoryDeleteId);
         }
         [HttpPost]
         public IActionResult Delete(Category category)

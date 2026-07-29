@@ -16,22 +16,26 @@
                         <div class="card-body">
                             <div class="row g-3">
                                 <div class="col-md-12">
+                                    <label for="validationCustom01" class="form-label">Ürün Id</label>
+                                    <input name="Id" type="text" class="form-control" id="validationCustom01" value="@Model.Id" required />
+                                </div>
+                                <div class="col-md-12">
                                     <label for="validationCustom01" class="form-label">Ürün Adı</label>
-                                    <input name="adi" type="text" class="form-control" id="validationCustom01" required />
+                                    <input name="Adi" type="text" class="form-control" id="validationCustom01" value="@Model.Adi" required />
                                 </div>
                                 <div class="col-md-12">
-                                    <label for="validationCustom01" class="form-label">Fiyat </label>
-                                    <input name="fiyat" type="text" class="form-control" id="validationCustom01" required />
+                                    <label for="validationCustom02" class="form-label">Fiyat </label>
+                                    <input name="Fiyat" type="text" class="form-control" id="validationCustom02" value="@Model.Fiyat" required />
                                 </div>
                                 <div class="col-md-12">
-                                    <label for="validationCustom01" class="form-label">Stok </label>
-                                    <input name="stok" type="text" class="form-control" id="validationCustom01" required />
+                                    <label for="validationCustom03" class="form-label">Stok </label>
+                                    <input name="Stok" type="text" class="form-control" id="validationCustom03" value="@Model.Stok" required />
                                 </div>
                                 <div class="col-md-12">
 
-                                    <select name="Id" class="form-control">
+                                    <select name="categoryId" class="form-control" >
                                         <option value="0">Kategori Seçin</option>
-                                        @foreach (var item in ViewBag.Category)
+                                        @foreach (var item in ViewBag.Kategoriler)
                                         {
                                             <option value="@item.Id">@item.Adi</option>
                                         }
@@ -40,8 +44,8 @@
 
                                 
                                 <div class="col-md-12">
-                                    <label for="validationCustom02" class="form-label">Ürün Açıklaması</label>
-                                    <textarea name="aciklama" class="form-control" id="validationCustom02" placeholder="Açıklama" style="height: 6rem" required></textarea>
+                                    <label for="validationCustom04" class="form-label">Ürün Açıklaması</label>
+                                    <textarea name="Aciklama" class="form-control" id="validationCustom04" placeholder="Açıklama" style="height: 6rem" value="@Model.Aciklama" required></textarea>
                                 </div>
                             </div>
                         </div>

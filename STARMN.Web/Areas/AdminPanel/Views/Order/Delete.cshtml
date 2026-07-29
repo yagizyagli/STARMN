@@ -20,12 +20,21 @@
                         <div class="card-body">
                             <div class="row g-3">
                                 <div class="col-md-12">
+                                    <label for="validationCustom01" class="form-label">Müşteri Id</label>
+                                    <input name="Id" type="text" class="form-control" id="validationCustom01" value="@Model.Id" required />
+                                </div>
+                                <div class="col-md-12">
                                     <label for="validationCustom01" class="form-label">Müşteri Adı</label>
-                                    <input name="adi" type="text" class="form-control" id="validationCustom01" required />
+                                    <input name="Adi" type="text" class="form-control" id="validationCustom01" value="@Model.MusteriAdi" required />
                                 </div>
                                 <div class="col-md-12">
                                     <label for="validationCustom02" class="form-label">Sipariş Tarihi</label>
-                                    <input name="tarih" type="date" class="form-control" id="validationCustom02" required />
+                                    <input name="Tarih" type="date" class="form-control" id="validationCustom02" value="@Model.Tarih" required />
+
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="validationCustom03" class="form-label">Toplam Tutar</label>
+                                    <input name="ToplamTutar" type="text" class="form-control" id="validationCustom03" value="@Model.ToplamTutar" required />
 
                                 </div>
                             </div>
