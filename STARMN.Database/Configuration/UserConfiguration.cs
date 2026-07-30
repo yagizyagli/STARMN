@@ -11,7 +11,7 @@ namespace STARMN.Database.Configuration
             builder.ToTable("Users");
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).UseIdentityColumn();
-            builder.Property(x => x.KullanicAdi).IsRequired().HasMaxLength(250);
+            builder.Property(x => x.KullaniciAdi).IsRequired().HasMaxLength(250);
             builder.Property(x => x.Sifre).IsRequired().HasMaxLength(250);
             builder.Property(x => x.Email).IsRequired().HasMaxLength(250);
             builder.Property(x => x.Tel).IsRequired().HasMaxLength(20);

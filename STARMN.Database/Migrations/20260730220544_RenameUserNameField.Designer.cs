@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using STARMN.Database;
 
@@ -11,9 +12,11 @@ using STARMN.Database;
 namespace STARMN.Database.Migrations
 {
     [DbContext(typeof(STARMNDB))]
-    partial class STARMNDBModelSnapshot : ModelSnapshot
+    [Migration("20260730220544_RenameUserNameField")]
+    partial class RenameUserNameField
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

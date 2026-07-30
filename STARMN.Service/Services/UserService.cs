@@ -42,18 +42,8 @@ namespace STARMN.Service.Services
         {
             try
             {
-                User KullaniciEkle = new User();
-
-                KullaniciEkle.KullanicAdi = user.KullanicAdi;                
-                KullaniciEkle.Email = user.Email;
-                KullaniciEkle.Sifre = user.Sifre;
-                KullaniciEkle.Tel = user.Tel;                
-                KullaniciEkle.RoleId = user.RoleId;
-                
-
-                _userRepository.Save(KullaniciEkle);
-
-                return KullaniciEkle;
+               _userRepository.Save(user);
+               return user;
             }
             catch
             {
@@ -65,22 +55,8 @@ namespace STARMN.Service.Services
         {
             try
             {
-                User KullaniciGuncelle= _userRepository.GetById(user.Id);
-
-                if (KullaniciGuncelle == null)
-                {
-                    return KullaniciGuncelle;
-                }
-
-                KullaniciGuncelle.KullanicAdi = user.KullanicAdi;                
-                KullaniciGuncelle.Email = user.Email;
-                KullaniciGuncelle.Sifre = user.Sifre;
-                KullaniciGuncelle.Tel = user.Tel;                
-                KullaniciGuncelle.RoleId = user.RoleId;
-
-                _userRepository.Update(KullaniciGuncelle);
-
-                return KullaniciGuncelle;
+               _userRepository.Update(user);
+                return user;
             }
             catch
             {

@@ -42,14 +42,8 @@ namespace STARMN.Service.Services
         {
             try
             {
-                Role RolEkle = new Role();
-
-                RolEkle.RolAdi = role.RolAdi;
-                RolEkle.Aciklama = role.Aciklama;
-                RolEkle.Sirket = role.Sirket;
-                _roleRepository.Save(RolEkle);
-
-                return RolEkle;
+                _roleRepository.Save(role);
+                return role;
             }
             catch
             {
@@ -61,19 +55,9 @@ namespace STARMN.Service.Services
         {
             try
             {
-                Role RolGuncelle = _roleRepository.GetById(role.RoleId);
-
-                if (RolGuncelle == null)
-                {
-                    return RolGuncelle;
-                }
-
-                RolGuncelle.RolAdi = role.RolAdi;
-                RolGuncelle.Aciklama = role.Aciklama;
-
-                _roleRepository.Update(RolGuncelle);
-
-                return RolGuncelle;
+                _roleRepository.Update(role);
+                return role;
+                
             }
             catch
             {

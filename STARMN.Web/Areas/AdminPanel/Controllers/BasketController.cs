@@ -6,6 +6,8 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
     public class BasketController : Controller
     {
         private readonly IBasketService _basketService;
+        private readonly IProductService _productService;
+        private readonly ICategoryService _categoryService;
         
 
 
