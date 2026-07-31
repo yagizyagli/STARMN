@@ -31,7 +31,24 @@
                                     <label for="validationCustom02" class="form-label">Birim Fiyatı</label>
                                     <input name="BirimFiyat" type="text" class="form-control" id="validationCustom02" value="@Model.BirimFiyat" required />
 
-                                </div>                                
+                                </div>   
+                                <div class="col-md-12">
+
+                                    <select name="OrderId" class="form-control">
+                                        <option value="0">Sipariş Seçin</option>
+                                        @foreach (var item in ViewBag.Siparisler)
+                                        {
+                                            <option value="@item.Id">@item.MusteriAdi</option>
+                                        }
+                                    </select>
+                                    <select name="ProductId" class="form-control">
+                                        <option value="0">Ürün Seçin</option>
+                                        @foreach (var item in ViewBag.Urunler)
+                                        {
+                                            <option value="@item.Id">@item.Adi</option>
+                                        }
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="card-footer">

@@ -1,1 +1,84 @@
-﻿
+﻿@using STARMN.Database.Entities
+
+@{
+    ViewData["Title"] = "Dashboard v3";
+    Layout = "~/Areas/AdminPanel/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<main class="app-main">
+    <div class="app-content">
+        <div class="container-fluid">
+
+            <div class="col-lg-12">
+                <div class="card card-primary card-outline mb-4">
+                    <div class="card-header bg-primary">
+                        <div class="card-title ">Sepet Güncelle</div>
+                    </div>
+                    <form action="Update" method="post" class="needs-validation" novalidate>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <label for="validationCustom01" class="form-label">Sepet Id</label>
+                                        <input name="Id" type="text" class="form-control" id="validationCustom01" value="@Model.Id" required />
+                                    </div>
+                                    <div class="col-md-12">
+                                        <select name="ProductId" class="form-control">
+                                            <option value="0">Ürün Seçin</option>
+                                            @foreach (var item in ViewBag.Urunler)
+                                            {
+                                                <option value="@item.Id">@item.Adi</option>
+                                            }
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="validationCustom01" class="form-label">Adı</label>
+                                        <input name="Adi" type="text" class="form-control" id="validationCustom01" value="@Model.Adi" required />
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="validationCustom02" class="form-label">Adet</label>
+                                        <input name="Adet" type="text" class="form-control" id="validationCustom02" value="@Model.Adet" required />
+
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="validationCustom01" class="form-label">Fiyat</label>
+                                        <input name="Fiyat" type="text" class="form-control" id="validationCustom01" value="@Model.Fiyat" required />
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="validationCustom01" class="form-label">Ekleyen Id</label>
+                                        <input name="EkleynId" type="text" class="form-control" id="validationCustom01" value="@Model.EkleynId" required />
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="validationCustom01" class="form-label">Eklenme Tarihi</label>
+                                        <input name="EklenmeTarihi" type="date" class="form-control" id="validationCustom01" value="@Model.EklenmeTarihi" required />
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="validationCustom01" class="form-label">Toplam</label>
+                                        <input name="Toplam" type="text" class="form-control" id="validationCustom01" value="@Model.Toplam" required />
+                                    </div>
+                                    <div class="col-md-12">
+
+                                        <select name="EkleynId" class="form-control">
+                                            <option value="0">Kullanıcı Seçin</option>
+                                            @foreach (var item in ViewBag.Kullanicilar)
+                                            {
+                                                <option value="@item.Id">@item.KullaniciAdi</option>
+                                            }
+                                        </select>                                        
+                                    </div>
+                                </div>
+                            <div class="card-footer">
+                            <button class="btn btn-info" type="submit">Sepeti Kaydet</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@section Scripts {
+    <script src="~/adminlte/dist/js/validationtemplate.js"></script>
+}

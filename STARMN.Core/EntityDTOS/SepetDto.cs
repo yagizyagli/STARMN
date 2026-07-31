@@ -3,7 +3,8 @@
 namespace STARMN.Core.EntityDTOS;
 
 public class SepetDto
-{
+{   
+    public int Id { get; set; }
     public int ProductId { get; set; }
     public string Adi { get; set; }
     public int Adet { get; set; }

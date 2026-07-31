@@ -43,6 +43,8 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
 
         public IActionResult Update(int id)
         {
+            ViewBag.Siparisler = _orderService.GetAll();
+            ViewBag.Urunler = _productService.GetAll();
             var orderDetailUpdateId = _orderDetailService.GetById(id);
             return View(orderDetailUpdateId);
         }
@@ -59,6 +61,8 @@ namespace STARMN.Web.Areas.AdminPanel.Controllers
         }
         public IActionResult Delete(int id)
         {
+            ViewBag.Siparisler = _orderService.GetAll();
+            ViewBag.Urunler = _productService.GetAll();
             var orderDetailDeleteId = _orderDetailService.GetById(id);
             return View(orderDetailDeleteId);
         }

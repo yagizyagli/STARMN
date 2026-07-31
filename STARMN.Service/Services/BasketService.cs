@@ -19,7 +19,8 @@ namespace STARMN.Service.Services
         {
             List<SepetDto> sepet = new List<SepetDto>();
 
-            var varmiUrunSepette = sepet.Where(k => k.ProductId == sepetDto.ProductId).FirstOrDefault();
+            var varmiUrunSepette = _basketRepository.GetAll().FirstOrDefault(x => x.ProductId == sepetDto.ProductId && x.UserId == sepetDto.EkleynId);
+            
 
             if (varmiUrunSepette == null)
             {
@@ -31,19 +32,22 @@ namespace STARMN.Service.Services
                     AddedDate = DateTime.Now,
                     UserId = sepetDto.EkleynId,
                     Price = sepetDto.Fiyat,
+                    
+                    
                 });
                 return sepetDto;
             }
             else
             {
-                var getirUrun = _basketRepository.GetById(varmiUrunSepette.ProductId);
+                var getirUrun = _basketRepository.GetById(varmiUrunSepette.Id);
 
                 getirUrun.UnitCount += 1;
                 _basketRepository.Update(getirUrun);
 
-                return varmiUrunSepette;
+                return sepetDto;
             }
-
+            
+            
         }
 
         public SepetDto SepeteIDIleGetir(int sepetId)
@@ -55,10 +59,12 @@ namespace STARMN.Service.Services
 
             return new SepetDto
             {
+                Id=sepet.Id,
                 EkleynId = sepet.UserId,
                 ProductId = sepet.ProductId,
                 Adet = sepet.UnitCount,
-                Fiyat = sepet.Price
+                Fiyat = sepet.Price,                
+                
             };
         }
 
@@ -66,14 +72,14 @@ namespace STARMN.Service.Services
         {
             try
             {
-                var sepet = _basketRepository.GetById(sepetDto.ProductId);
+                var sepet = _basketRepository.GetById(sepetDto.Id);
                 if (sepet == null)
                 {
                     return null;
                 }
                 sepet.UnitCount = sepetDto.Adet;
                 sepet.Price = sepetDto.Fiyat;
-                sepet.AddedDate = DateTime.Now;
+                sepet.AddedDate = DateTime.Now;                
                 _basketRepository.Update(sepet);
                 return sepetDto;
 
@@ -87,18 +93,25 @@ namespace STARMN.Service.Services
         public List<SepetDto> SepetList(int userId)
         {
             var list = _basketRepository.GetAll().Where(k => k.UserId == userId).ToList();
-
-            var cevirDto = list.Select(item => new SepetDto
+            var cevirDto = list.Select(item =>
             {
-                EkleynId = item.UserId,
-                ProductId = item.ProductId,
-                Adet = item.UnitCount,
-                Fiyat = item.Price
+                var product = _productRepository.GetById(item.ProductId);
+
+                return new SepetDto
+                {
+                    Id = item.Id,
+                    ProductId = item.ProductId,
+                    Adi = product.Adi,
+                    Adet = item.UnitCount,
+                    Fiyat = item.Price,
+                    EklenmeTarihi = item.AddedDate,
+                    EkleynId = item.UserId,
+                    Toplam = item.Price * item.UnitCount,
+
+                };
             }).ToList();
-
             return cevirDto;
-        }        
-
+        }
         public bool SepetSil(int sepetId)
         {
             try

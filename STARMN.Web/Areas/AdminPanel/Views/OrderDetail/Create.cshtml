@@ -34,14 +34,14 @@
                                         <option value="0">Sipariş Seçin</option>
                                         @foreach (var item in ViewBag.Siparisler)
                                         {
-                                            <option value="@item.OrderId">@item.MusteriAdi</option>
+                                            <option value="@item.Id">@item.MusteriAdi</option>
                                         }
                                     </select>
                                     <select name="ProductId" class="form-control">
                                         <option value="0">Ürün Seçin</option>
                                         @foreach (var item in ViewBag.Urunler)
                                         {
-                                            <option value="@item.ProductId">@item.Adi</option>
+                                            <option value="@item.Id">@item.Adi</option>
                                         }
                                     </select>
                                 </div>
