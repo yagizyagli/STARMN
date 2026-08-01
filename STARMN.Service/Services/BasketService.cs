@@ -79,7 +79,9 @@ namespace STARMN.Service.Services
                 }
                 sepet.UnitCount = sepetDto.Adet;
                 sepet.Price = sepetDto.Fiyat;
-                sepet.AddedDate = DateTime.Now;                
+                sepet.AddedDate = DateTime.Now;
+                sepet.ProductId = sepetDto.ProductId;
+                sepet.UserId = sepetDto.EkleynId;
                 _basketRepository.Update(sepet);
                 return sepetDto;
 
