@@ -1,7 +1,10 @@
-﻿@{
+﻿@using STARMN.Web.Models
+@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@model ProductCategoryView
+
 <!-- Carousel Start -->
 <div class="container-fluid carousel bg-light px-0">
     <div class="row g-0 justify-content-end">
@@ -849,7 +852,9 @@
             <p class="mb-0 wow fadeInUp" data-wow-delay="0.2s">Discover our best-selling monitors, trusted by thousands of customers for their exceptional performance, stunning visuals, and reliable quality. Whether for gaming, work, or entertainment, STARMN has the perfect display for every setup.</p>
         </div>
         <div class="row g-4">
-            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+            @foreach (var item in Model.ProductList.Take(6))
+            {
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="products-mini-item border">
                     <div class="row g-0">
                         <div class="col-5">
@@ -870,139 +875,44 @@
                         </div>
                     </div>
                     <div class="products-mini-add border p-3">
-                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>                        
+                        <a href="javascript:void(0)" class="btn btn-primary border-secondary rounded-pill py-2 px-4" onclick="SepeteEkle(@item.Id, @item.Fiyat)"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>                        
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="products-mini-item border">
-                    <div class="row g-0">
-                        <div class="col-5">
-                            <div class="products-mini-img border-end h-100">
-                                <img src="~/electro/img/samsung game monitor5.jpg" class="img-fluid w-100 h-100" alt="Image">
-                                <div class="products-mini-icon rounded-circle bg-primary">
-                                    <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                            <div class="products-mini-content p-3">
-                                <a href="#" class="d-block mb-2">Game Monitor</a>
-                                <a href="~/Dashboard/ShopDetail" class="d-block h6" style="font-size: 14px;">SAMSUNG ODYSSEY G8 32-Inch 1Ms 330Hz 6K IPS Gaming Monitor <br> LS32HG802ESXUF</a>
-                                <del class="me-2 fs-5">$ 1599,99</del>
-                                <span class="text-primary fs-5">$ 959,40</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products-mini-add border p-3">
-                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>                      
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="products-mini-item border">
-                    <div class="row g-0">
-                        <div class="col-5">
-                            <div class="products-mini-img border-end h-100">
-                                <img src="~/electro/img/lg game monitor5.jpeg" class="img-fluid w-100 h-100" alt="Image">
-                                <div class="products-mini-icon rounded-circle bg-primary">
-                                    <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                            <div class="products-mini-content p-3">
-                                <a href="#" class="d-block mb-2">Game Monitor</a>
-                                <a href="~/Dashboard/ShopDetail" class="d-block h6" style="font-size: 14px;">LG UltraGear 39-Inch 240Hz OLED Curved Gaming Monitor <br> 39GS95QE-B</a>
-                                <del class="me-2 fs-5">$ 1399,99</del>
-                                <span class="text-primary fs-5">$ 839,99</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products-mini-add border p-3">
-                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="products-mini-item border">
-                    <div class="row g-0">
-                        <div class="col-5">
-                            <div class="products-mini-img border-end h-100">
-                                <img src="~/electro/img/asus work monitor4.jpg" class="img-fluid w-100 h-100" alt="Image">
-                                <div class="products-mini-icon rounded-circle bg-primary">
-                                    <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                            <div class="products-mini-content p-3">
-                                <a href="#" class="d-block mb-2">Office Monitor</a>
-                                <a href="~/Dashboard/ShopDetail" class="d-block h6" style="font-size: 14px;">ASUS 34-Inch 100Hz 1ms WQHD Adaptive Sync VA Office Monitor <br> VU34WCIP-W</a>
-                                <del class="me-2 fs-5">$ 429,99</del>
-                                <span class="text-primary fs-5">$ 343,99</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products-mini-add border p-3">
-                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="products-mini-item border">
-                    <div class="row g-0">
-                        <div class="col-5">
-                            <div class="products-mini-img border-end h-100">
-                                <img src="~/electro/img/dell work monitor3.jpeg" class="img-fluid w-100 h-100" alt="Image">
-                                <div class="products-mini-icon rounded-circle bg-primary">
-                                    <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                            <div class="products-mini-content p-3">
-                                <a href="#" class="d-block mb-2">Office Monitor</a>
-                                <a href="~/Dashboard/ShopDetail" class="d-block h6" style="font-size: 14px;">Dell 23.8" FHD Touch Office Monitor (1920 x 1080) <br> P2418HT</a>
-                                <del class="me-2 fs-5">$ 349,99</del>
-                                <span class="text-primary fs-5">$ 279,99</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products-mini-add border p-3">
-                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>                      
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="products-mini-item border">
-                    <div class="row g-0">
-                        <div class="col-5">
-                            <div class="products-mini-img border-end h-100">
-                                <img src="~/electro/img/hp work monitor2.jpeg" class="img-fluid w-100 h-100" alt="Image">
-                                <div class="products-mini-icon rounded-circle bg-primary">
-                                    <a href="~/Dashboard/ShopDetail"><i class="fa fa-eye fa-1x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                            <div class="products-mini-content p-3">
-                                <a href="#" class="d-block mb-2">Office Monitor</a>
-                                <a href="~/Dashboard/ShopDetail" class="d-block h6" style="font-size: 14px;">HP 23.8-Inch FHD 1080p 100Hz IPS White Office Monitor  <br> 94C21AA</a>
-                                <del class="me-2 fs-5">$ 149,99</del>
-                                <span class="text-primary fs-5">$ 119,99</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products-mini-add border p-3">
-                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i class="fas fa-shopping-cart me-2"></i> Add To Cart</a>                       
-                    </div>
-                </div>
-            </div>
+            }
+            
         </div>
-    </div>
+            
+        </div>
 </div>
-<!-- Bestseller Products End -->
 
+
+<!-- Bestseller Products End -->
+@section Scripts {
+
+    <script>
+        function SepeteEkle(id, fiyat) {
+            $.ajax({
+                type: "POST",
+                url: "/Shop/SepeteEkle",
+                data: {
+                    urunId: id,
+                    urunFiyat: fiyat
+                },
+                success: function(response) {
+                    if (response.success) {
+                        alert("Ürün sepete eklendi");
+                    }
+                    else {
+                        alert(response.message);
+                    }
+                },
+                error: function() {
+                    alert("Hata oluştu");
+                }
+            });
+        }
+    </script>
+}
 
 

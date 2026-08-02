@@ -1,10 +1,11 @@
-﻿@using STARMN.Web.Models
+﻿@using STARMN.Core.EntityDTOS
+@using STARMN.Web.Models
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@model ProductCategoryView
 
+@model List<SepetDto>
 <style>
     .cart {
         width: 1000px;
@@ -73,82 +74,33 @@
 
     <h1>Shopping Cart</h1>
     <p>Review your selected products before checkout.</p>
-
-    <div class="cart-item">
-
-        <img src="~/electro/img/samsung game monitor4.jpg" alt="Monitor">
-
-        <div class="product-info">
-            <h3>Samsung Odyssey Neo G7 </h3>
-            <p>32-Inch 4K IPS LED 165Hz Curved Gaming Monitor</p>
-            <h4>$479,99</h4>
+    @foreach (var item in Model)
+    {
+        <div class="cart-item">
+            <img src="~/electro/img/samsung game monitor2.jpg" alt="">
+            <div class="product-info">
+                <h3>@item.Adi</h3>                
+                <h4>$@item.Fiyat</h4>
+            </div>
+            <div class="quantity">
+                <label>Qty</label>
+                <input type="number" value="@item.Adet" min="1">
+            </div>
+            <div class="price">
+                <h3>$@(item.Fiyat * item.Adet)</h3>
+            </div>
+            <a href="#" class="remove">Remove</a>
         </div>
-
-        <div class="quantity">
-            <label>Qty</label>
-            <input type="number" value="1" min="1">
-        </div>
-
-        <div class="price">
-            <h3>$479,99</h3>
-        </div>
-
-        <a href="#" class="remove">Remove</a>
-
-    </div>
-
-    <div class="cart-item">
-
-        <img src="~/electro/img/asus work monitor2.jpg" alt="Monitor">
-
-        <div class="product-info">
-            <h3>ASUS ProArt </h3>
-            <p>27-Inch IPS LED Office Monitor</p>
-            <h4>$239,99</h4>
-        </div>
-
-        <div class="quantity">
-            <label>Qty</label>
-            <input type="number" value="1" min="1">
-        </div>
-
-        <div class="price">
-            <h3>$239,99</h3>
-        </div>
-
-        <a href="#" class="remove">Remove</a>
-
-    </div>    
-    <div class="cart-item">
-
-        <img src="~/electro/img/lg work monitor1.jpeg" alt="Monitor">
-
-        <div class="product-info">
-            <h3>LG Smart</h3>
-            <p>27-Inch 4K UHD (3840 x 2160) IPS Office Monitor</p>
-            <h4>$263,99</h4>
-        </div>
-
-        <div class="quantity">
-            <label>Qty</label>
-            <input type="number" value="1" min="1">
-        </div>
-
-        <div class="price">
-            <h3>$263,99</h3>
-        </div>
-
-        <a href="#" class="remove">Remove</a>
-
-    </div>
+    }
+    
+ 
 
     <div class="summary">
 
-        <h2>Order Summary</h2>
-
-        <p>Subtotal <span>$ 983,97</span></p>
+        <h2>Order Summary</h2>        
+        <p>Subtotal <span>$ @(Model.Sum(i => i.Fiyat * i.Adet))</span></p>
         <p>Shipping <span>Free</span></p>
-        <p><strong>Total <span>$ 983,97</span></strong></p>
+        <p><strong>Total <span>$ @(Model.Sum(i => i.Fiyat * i.Adet))</span></strong></p>
 
         <a href="~/Dashboard/Checkout" class="checkout">Proceed to Checkout</a>
 

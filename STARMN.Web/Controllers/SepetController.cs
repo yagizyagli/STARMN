@@ -1,15 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using STARMN.Core.EntityDTOS;
 using STARMN.Service.Services.Interfaces;
 
 
 namespace STARMN.Web.Controllers
 {
     public class SepetController : Controller
-    {               
-        public IActionResult Index()
+    {      
+        private readonly IBasketService _basketService;
+
+        public SepetController(IBasketService basketService)
         {
-           return View();
+            _basketService = basketService;
         }
+        public IActionResult Index(int id)
+        {
+            var sepetList = _basketService.SepetList(id);
+            return View(sepetList);
+        }
+        
     }
     
 }
